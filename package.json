@@ -1,0 +1,25 @@
+{
+  "name": "ureakim.github.io",
+  "version": "1.0.0",
+  "description": "Landing Page",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ureakim/ureakim.github.io.git"
+  },
+  "author": "Ureakim <dev@ureakim.net>",
+  "homepage": "https://github.com/Ureakim/ureakim.github.io#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {}
+}
