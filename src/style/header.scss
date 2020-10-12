@@ -1,0 +1,73 @@
+.resume-header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  
+  .name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid $color-font;
+  }
+  
+  .work {
+    font-size: 1.5rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 80px;
+
+    a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+      margin: 0 35px;
+      width: 50px;
+      height: 50px;
+			border-radius: 25px;
+			background-color: $color-bg-alt;
+			opacity: 0;
+			transition: 0.5s;
+
+      &.email {
+				border: 2px solid $color-green;
+      }
+      &.git {
+        border: 2px solid $color-blue;
+			}
+			&.profil {
+        border: 2px solid $color-orange;
+			}
+			&:hover {
+				border-color: $color-bg-alt;
+				transition: 0.5s;
+			}
+    }
+  }
+  
+  .slide {
+    overflow: hidden;
+
+    > * {
+      position: relative;
+      opacity: 0;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .slide-delayed > * {
+    animation-delay: .5s;
+  }
+  
+  .slide-up > * {
+    top: 100%;
+    animation-name: slide-up;
+  }
+  
+  .slide-down > * {
+    bottom: 100%;
+    animation-name: slide-down;
+  }
+}

@@ -1,0 +1,103 @@
+$color-bg: #4c566a;
+$color-bg-alt: #2e3440;
+$color-bg-box: #3b4252;
+$color-font: #eceff4;
+$color-font-alt: #d8dee9;
+$color-blue: #81a1c1;
+$color-red: #bf616a;
+$color-orange: #d08770;
+$color-green: #a3be8c;
+
+$size-width-max: 1366px;
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../assets/fonts/Raleway-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $color-font;
+  background: $color-bg;
+  font-family: Raleway, Verdana, Geneva, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $color-font;
+}
+
+section.bloc {
+  position: relative;
+  padding: 100px 0;
+  
+  &:first-child:after {
+    content: "";
+    background-image: url("../assets/keyboard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.075;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  &:nth-child(even) {
+    background-color: $color-bg-alt;
+  }
+  
+  &:not(:last-child) {
+    border-bottom: 5px outset $color-bg-alt;
+  }
+  
+  h1 {
+    font-size: 1.7em;
+    color: $color-font-alt;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 70px 0;
+  }
+  
+  .content {
+    max-width: $size-width-max;
+    margin: auto;
+  } 
+}
+
+@import "header";
+@import "skills";
+@import "experiences";
+@import "animation";

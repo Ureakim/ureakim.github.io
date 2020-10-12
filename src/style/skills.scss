@@ -1,0 +1,69 @@
+@media all and (max-width: 900px) {
+  .skills {
+    flex-flow: column wrap;
+    align-items: center;
+
+    .skill-bloc {
+      margin: 30px;
+    }
+  }
+}
+@media all and (min-width: 900px) {
+  .skills {
+    flex-flow: row wrap;
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  
+  .skill-bloc {
+    position: relative;
+    width: 25%;
+    min-width: 250px;
+    background-color: $color-bg;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position:absolute;
+      top: 0;
+      margin: -40px;
+      width:80px;
+      height:80px;
+      transform:rotate(45deg);
+    }
+    
+    &.bloc-blue {
+      &::after {
+        background-color:$color-blue;
+      }
+    }
+    
+    &.bloc-green {
+      &::after {
+        background-color:$color-green;
+      }
+    }
+    
+    &.bloc-orange {
+      &::after {
+        background-color:$color-orange;
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    text-align: center;
+    padding: 5px 0;
+  }
+  .title {
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+}

@@ -2,7 +2,7 @@
   "name": "ureakim.github.io",
   "version": "1.0.0",
   "description": "Landing Page",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack"
@@ -12,11 +12,23 @@
     "url": "git+https://github.com/Ureakim/ureakim.github.io.git"
   },
   "author": "Ureakim <dev@ureakim.net>",
+  "license": "WTFPL",
   "homepage": "https://github.com/Ureakim/ureakim.github.io#readme",
   "devDependencies": {
+    "@primer/octicons-react": "^11.0.0",
+    "@types/webpack-env": "^1.15.3",
     "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
     "html-webpack-plugin": "^4.5.0",
     "mini-css-extract-plugin": "^0.11.2",
+    "preact": "^10.5.2",
+    "preact-compat": "^3.19.0",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
