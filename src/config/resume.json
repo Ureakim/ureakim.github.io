@@ -13,12 +13,13 @@
       "Web Components"
     ],
     "backend": [
-      "Java/JEE",
+      "Java/JEE - Spring Boot",
       "MySQL - MongoDB"
     ],
     "tooling": [
       "NodeJS",
-      "MQ Series - JMS"
+      "Jenkins",
+      "Git"
     ]
   },
   "experiences": [
@@ -31,6 +32,15 @@
       "work": {
         "description": "Développement d'applications internes",
         "details": [
+          {
+            "short": "Application de traitement des non-conformitées",
+            "long": "Permet de rapporter et traiter tout problème d'exploitation lors d'intervention sur des chariots élévateurs",
+            "stack": [
+              "Angular",
+              "Spring Boot",
+              "MongoDb"
+            ]
+          },
           {
             "short": "Application de gestion commerciale",
             "long": "À destination des vendeurs (PC/Tablette), cette application permet la gestion des prises de contact, offres, contrats, prospections, ...",
@@ -52,7 +62,11 @@
             ]
           },
           {
-            "short": "Maintenance des applications internes"
+            "short": "Maintenance des applications internes",
+            "stack": [
+              "AngularJs/Angular",
+              "JEE"
+            ]
           }
         ]
       }
