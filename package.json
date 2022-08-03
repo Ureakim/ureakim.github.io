@@ -4,7 +4,7 @@
   "description": "Landing Page",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server",
     "build": "webpack"
   },
   "repository": {

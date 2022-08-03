@@ -1,12 +1,11 @@
-$color-bg: #4c566a;
-$color-bg-alt: #2e3440;
-$color-bg-box: #3b4252;
-$color-font: #eceff4;
-$color-font-alt: #d8dee9;
-$color-blue: #81a1c1;
-$color-red: #bf616a;
-$color-orange: #d08770;
-$color-green: #a3be8c;
+$color-bg: #262626;
+$color-bg-alt: #373737;
+$color-font: #b2b2b2;
+$color-font-alt: #a4a4a4;
+$color-blue: #6a8599;
+$color-red: #e57b73;
+$color-brown: #977e78;
+$color-purple: #9e85ac;
 
 $size-width-max: 1366px;
 
@@ -59,7 +58,7 @@ a {
 section.bloc {
   position: relative;
   padding: 100px 0;
-  
+
   &:first-child:after {
     content: "";
     background-image: url("../assets/keyboard.png");
@@ -74,15 +73,15 @@ section.bloc {
     position: absolute;
     z-index: -1;
   }
-  
+
   &:nth-child(even) {
     background-color: $color-bg-alt;
   }
-  
+
   &:not(:last-child) {
     border-bottom: 5px outset $color-bg-alt;
   }
-  
+
   h1 {
     font-size: 1.7em;
     color: $color-font-alt;
@@ -90,11 +89,11 @@ section.bloc {
     text-transform: uppercase;
     margin: 0 0 70px 0;
   }
-  
+
   .content {
     max-width: $size-width-max;
     margin: auto;
-  } 
+  }
 }
 
 @import "header";

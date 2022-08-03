@@ -30,13 +30,13 @@
 			opacity: 0;
 
       &.email {
-				border: 2px solid $color-green;
+				border: 2px solid $color-purple;
       }
       &.git {
         border: 2px solid $color-blue;
 			}
 			&.profil {
-        border: 2px solid $color-orange;
+        border: 2px solid $color-brown;
 			}
 			&:hover {
 				border-color: $color-bg-alt;

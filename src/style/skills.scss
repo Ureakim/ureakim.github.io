@@ -43,13 +43,13 @@
     
     &.bloc-green {
       &::after {
-        background-color:$color-green;
+        background-color:$color-purple;
       }
     }
     
     &.bloc-orange {
       &::after {
-        background-color:$color-orange;
+        background-color:$color-brown;
       }
     }
   }
