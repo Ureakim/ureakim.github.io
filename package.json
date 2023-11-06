@@ -1,36 +1,26 @@
 {
-  "name": "ureakim.github.io",
-  "version": "1.0.0",
-  "description": "Landing Page",
-  "main": "src/index.ts",
-  "scripts": {
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server",
-    "build": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ureakim/ureakim.github.io.git"
-  },
-  "author": "Ureakim <dev@ureakim.net>",
-  "license": "WTFPL",
-  "homepage": "https://github.com/Ureakim/ureakim.github.io#readme",
-  "devDependencies": {
-    "@primer/octicons-react": "^11.0.0",
-    "@types/webpack-env": "^1.15.3",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^4.3.0",
-    "file-loader": "^6.1.0",
-    "html-webpack-plugin": "^4.5.0",
-    "mini-css-extract-plugin": "^0.11.2",
-    "preact": "^10.5.2",
-    "sass": "^1.26.11",
-    "sass-loader": "^10.0.2",
-    "style-loader": "^1.2.1",
-    "ts-loader": "^8.0.4",
-    "typescript": "^4.0.3",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
-  },
-  "dependencies": {}
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"preact": "^10.13.1",
+		"preact-iso": "^2.3.2",
+		"preact-render-to-string": "^6.2.2"
+	},
+	"devDependencies": {
+		"@preact/preset-vite": "^2.5.0",
+		"autoprefixer": "^10.4.16",
+		"eslint": "^8.53.0",
+		"eslint-config-preact": "^1.3.0",
+		"postcss": "^8.4.31",
+		"tailwindcss": "^3.3.5",
+		"vite": "^4.3.2"
+	},
+	"eslintConfig": {
+		"extends": "preact"
+	}
 }
